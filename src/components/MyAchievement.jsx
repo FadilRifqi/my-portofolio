@@ -12,9 +12,16 @@ const MyAchievement = () => {
         <Row className="bg-2 ">
           {Achievement.map((achievement, i) => {
             return (
-              <Col xs={4} className="mb-2">
-                <Card style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
+              <Col md={4} className="mb-2 d-flex justify-content-center">
+                <Card style={{ width: "18rem" }} text={"dark"}>
+                  <Card.Img
+                    variant="top"
+                    src="/image/pp.jpg"
+                    style={{
+                      height: "14em",
+                      width: "100%",
+                    }}
+                  />
                   <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>

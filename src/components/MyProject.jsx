@@ -27,6 +27,7 @@ const MyProject = () => {
                       className="d-block w-100"
                       src="/image/pp.jpg"
                       alt="First slide"
+                      style={{ width: "100%" }}
                     />
                     <Carousel.Caption>
                       <div className="d-block">
