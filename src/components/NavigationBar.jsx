@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Nav, Container, Navbar, NavDropdown } from "react-bootstrap";
+import { Nav, Container, Navbar } from "react-bootstrap";
 import { AiFillHome, AiFillTrophy } from "react-icons/ai";
 import { MdContactPage } from "react-icons/md";
 import { BsFillFileEarmarkCodeFill, BsFillBookFill } from "react-icons/bs";
@@ -44,9 +44,7 @@ const NavigationBar = () => {
       className={`navbar-top ${!show && "hidden"} trans`}
     >
       <Container className={`${!show && "hidden"} trans`}>
-        <Navbar.Brand className={`navbar-text logo`}>
-          <img src="" />
-        </Navbar.Brand>
+        <Navbar.Brand className={`navbar-text logo`}></Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           className="mx-10"

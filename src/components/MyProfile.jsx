@@ -5,7 +5,7 @@ const MyProfile = () => {
   return (
     <section id="home">
       <Container className="h-100">
-        <Row className="mt-3">
+        <Row className="mt-3 box-img">
           <Col md={8} className="h-auto d-flex justify-content-center ">
             <div className="text-box">
               <p>
@@ -15,14 +15,14 @@ const MyProfile = () => {
                   I'm <span className="color-3">Muhammad</span> Fadil{" "}
                   <span className="color-3">Ataullah</span> Rifqi
                 </h1>
-                <p>
+                <p className="color-white">
                   First semester Informatic Engineering college student of ITERA
                   that have interest in Website Development
                 </p>
               </p>
             </div>
           </Col>
-          <Col md={4} className=" h-80 box-img"></Col>
+          <Col md={4} className=" h-100 "></Col>
         </Row>
       </Container>
     </section>

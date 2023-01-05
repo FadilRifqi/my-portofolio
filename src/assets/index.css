@@ -4,6 +4,11 @@ html {
   scroll-behaviour: smooth;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
 .navbar-text {
   color: #737783;
   /*EDF1FD*/
@@ -32,14 +37,14 @@ html {
 }
 
 .h-100 {
-  height: 100vh !important;
+  height: auto !important;
+  background-repeat: no-repeat;
 }
 .mt-0 {
   margin-top: -2px !important;
 }
 .h-80 {
-  height: 80vh;
-  background-repeat: no-repeat;
+  height: 100vh;
 }
 .h-auto {
   height: 100%;
@@ -51,7 +56,11 @@ html {
   letter-spacing: 1px;
 }
 .color-2 {
-  color: #3d4055;
+  color: black;
+}
+.color-white {
+  color: black;
+  -webkit-text-stroke: 0.05px white;
 }
 .color-3 {
   color: #ff073d !important;
@@ -61,13 +70,22 @@ html {
   font-size: 2.8em;
 }
 .box-img {
+  height: 100vh;
   background-image: url("./image/pp.png");
+  background-repeat: no-repeat;
+  background-position: right;
   background-size: contain;
 }
 .bg-2 {
-  background-color: #fffffe;
+  background-color: #292929;
+  color: #fff;
 }
 
+.tb-1 {
+  font-size: 2em;
+  color: #292929;
+  font-weight: 500;
+}
 .hidden {
   height: 4rem;
   width: 100%;
@@ -76,11 +94,26 @@ html {
   top: -80px;
   transition: 0.8s linear !important;
 }
-
+.text-none {
+  text-decoration: none;
+  color: black;
+}
+.text-none:hover {
+  text-decoration: none;
+  color: #ff073d;
+}
+.tb-2 {
+  font-size: 32px;
+}
 .tb-3 {
   font-weight: 700;
   font-size: 2.8em;
-  color: #282a35;
+  color: black;
+}
+.tb-3-white {
+  font-weight: 700;
+  font-size: 2.8em;
+  color: #fff;
 }
 
 .trans {
@@ -104,4 +137,40 @@ html {
 }
 
 .h-auto {
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.btn-dark:hover {
+  background-color: #ff073d !important;
+  border: 1px solid #ff073d;
+}
+.btn-dark:active {
+  background-color: #ff073d !important;
+  border: 1px solid #ff073d;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+}
+.text-success {
+  background-color: aquamarine;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 20px;
+}
+.text-danger {
+  background-color: tomato;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 20px;
+}
+
+.text-black {
+  color: black;
 }

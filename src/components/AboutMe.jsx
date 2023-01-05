@@ -3,11 +3,13 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const AboutMe = () => {
   return (
-    <section id="About" className="bg-2">
+    <section id="About" className="bg-2 pb-5">
       <Container className="h-100 bg-2">
         <Row className="bg-2 text-center">
           <div className="bg-2 h-auto">
-            <h1 className="tb-3 mt-5">About Me</h1>
+            <h1 className="tb-3-white mt-5">
+              About <span className="color-3">Me</span>
+            </h1>
           </div>
           <Col md={6} className=" pt-5 bg-2  ">
             <div className="text-justify">
@@ -31,7 +33,7 @@ const AboutMe = () => {
         <Row className="bg-2 text-center">
           <Col>
             <div className="border-img">
-              <img src="/image/logo.png" />
+              <img src="/image/logo.png" class="img-fluid" alt="logo" />
             </div>
           </Col>
         </Row>

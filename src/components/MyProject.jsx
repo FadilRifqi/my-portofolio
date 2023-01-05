@@ -5,12 +5,13 @@ const MyProject = () => {
   return (
     <section id="Project">
       <Container className="h-100">
-        <Row className="">
-          <div className=" h-auto">
-            <h1 className="tb-3 mt-5">My Project</h1>
-          </div>
+        <Row className="text-center">
+          <h1 className="tb-3">
+            <span className="color-3">My</span> Project
+          </h1>
+          <div className=" h-auto"></div>
 
-          <Col className=" mt-5 d-flex justify-content-center">
+          <Col className=" d-flex justify-content-center">
             <div className=""></div>
           </Col>
         </Row>
